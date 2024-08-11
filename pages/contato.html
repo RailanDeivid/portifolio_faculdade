@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- <nav>
+        <a href="index.html">Quem sou eu?</a>
+        <a href="pages/formacao.html">Formação acadêmica</a>
+        <a href="portfolio.html">Portfólio</a>
+        <a href="contato.html">Contato</a>
+    </nav> -->
+    <nav>
+        <ul class="nav">
+          <li><a href="../index.html">Sobre</a></li>
+          <li><a href="formacao.html">Formação acadêmica</a></li>
+          <li><a href="portfolio.html">Portfólio</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <div>
+        <h2>Contate-me</h2>
+        <form action="mailto:contato.railandeividgmail.com" method="post" enctype="text/plain">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Descrição:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
