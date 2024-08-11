@@ -1,0 +1,329 @@
+/* Ajuste para telas menores que 768px (tablets e dispositivos móveis) */
+@media (max-width: 768px) {
+    /* Ajusta o preenchimento interno da classe container */
+    .container {
+        padding: 10px;
+    }
+
+    /* Alinha a imagem e o texto verticalmente na seção "Quem sou eu?" */
+    .quemsoueu {
+        flex-direction: column;
+        text-align: center; /* Centraliza o texto */
+    }
+
+    /* Define a largura máxima da imagem e espaçamento inferior na seção "Quem sou eu?" */
+    .quemsoueu img {
+        max-width: 100%; 
+        margin-bottom: 20px;
+    }
+
+    /* Reduz o tamanho do texto na seção "Quem sou eu?" */
+    .quemsoueu p {
+        font-size: 24px;
+    }
+
+    /* Ajusta o tamanho do texto na seção "Formação" */
+    .formacao {
+        font-size: 16px;
+    }
+
+    /* Alinha os itens do portfólio verticalmente e ajusta o espaçamento */
+    .portfolio-container {
+        flex-direction: column; 
+        margin: 20px;
+    }
+
+    /* Ajusta a largura e a direção do layout na seção "Projetos" */
+    .projetos-container {
+        max-width: 100%; 
+        flex-direction: column; 
+    }
+
+    /* Ajusta o tamanho da imagem na seção "Projetos" e o espaçamento */
+    .projetos-imagem {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+/* Ajuste para telas menores que 480px (smartphones) */
+@media (max-width: 480px) {
+    /* Ajusta o tamanho da fonte do corpo do texto */
+    body {
+        font-size: 16px;
+    }
+
+    /* Reduz o tamanho dos cabeçalhos */
+    h2 {
+        font-size: 36px;
+    }
+
+    /* Alinha os itens de navegação verticalmente e ajusta o tamanho da fonte */
+    .nav {
+        flex-direction: column;
+        font-size: 18px;
+        gap: 15px;
+    }
+
+    /* Ajusta a altura da linha de destaque nos links de navegação */
+    .nav > li > a::before {
+        height: 2px;
+    }
+
+    /* Ajusta o preenchimento do formulário de contato */
+    form {
+        padding: 30px;
+    }
+
+    /* Ajusta o tamanho da fonte dos campos de entrada e texto do formulário */
+    form input, form textarea {
+        font-size: 16px;
+    }
+
+    /* Ajusta o tamanho da fonte do botão no formulário */
+    form button {
+        font-size: 16px;
+    }
+}
+
+/* Faz com que a imagem se ajuste ao tamanho do contêiner nas seções "Quem sou eu?" e "Projetos" */
+.quemsoueu img, .projetos-imagem {
+    width: 100%;
+    height: auto;
+}
+
+/* Define o estilo básico para todo o site */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    color: #ffffff; /* Define a cor do texto como branco */
+    background: linear-gradient(to right, #121213, #042968); /* Aplica um gradiente de fundo */
+}
+
+/* Estilo para os cabeçalhos (h2) */
+h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 45px;
+}
+
+/* Remove a marcação padrão de listas */
+ul {
+    list-style: none;
+}
+
+/* Define o estilo para a barra de navegação */
+nav {
+    color: #ffffff;
+    background-color: #1a2027;
+    border-radius: 10px;
+    margin: 10px auto;
+    width: fit-content;
+    padding: 10px 20px;
+    opacity: 60%;
+    transition-duration: 0.7s; /* Transição suave para efeitos */
+}
+
+/* Define o layout e estilo dos itens de navegação */
+.nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 70px;
+    font-size: 25px;
+    font-weight: bold;
+    gap: 30px;
+}
+
+/* Estilo para links de navegação ao passar o mouse */
+.nav > li:hover > a {
+    color: #3e95ff;
+    text-decoration: none;
+}
+
+/* Estilo para a linha de destaque dos links de navegação ao passar o mouse */
+.nav > li:hover > a::before {
+    visibility: visible;
+    scale: 1 1;
+}
+
+/* Estilo básico dos links de navegação */
+.nav > li a {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 7px;
+    text-decoration: none;
+    position: relative;
+    height: 100%;
+}
+
+/* Estilo da linha de destaque dos links de navegação */
+.nav > li > a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 3px;
+    left: 0px;
+    background-color: #3e95ff;
+    transition: all 0.2s ease-in-out;
+    scale: 0 0;
+    visibility: hidden;
+}
+
+/* Estilo da seção "Quem sou eu?" */
+.quemsoueu {
+    padding: 15px;
+    margin: 5%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.quemsoueu img {
+    border-radius: 50%; /* Deixa a imagem circular */
+    max-width: 400px;
+    height: auto;
+}
+
+.quemsoueu p {
+    max-width: auto;
+    text-align: left;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Estilo da seção "Formação" */
+.formacao {
+    max-width: auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Estilo básico para listas */
+ul {
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: #1a2027;
+    border-radius: 3px;
+    margin: 10px auto;
+    width: fit-content;
+    padding: 10px 20px;
+}
+
+/* Estilo para links em listas */
+ul li a {
+    color: rgb(42, 104, 240);
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para o formulário de contato */
+form {
+    margin: 5%;
+    align-items: center;
+    background-color: #1a2027;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #ffffff;
+    color: #12161f;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #12161f;
+    color: #ffffff;
+}
+
+/* Estilo para a página de portfólio */
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 12000px;
+    margin: 50px;
+}
+
+.projetos-container {
+    background-color: #1a2027;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    margin-bottom: 20px;
+    max-width: 70%;
+    padding: 15px;
+}
+
+.projetos-imagem {
+    border-radius: 8px;
+    max-width: 400px;
+    margin-right: 20px;
+}
+
+.projetos-detalhes {
+    flex-grow: 1;
+}
+
+.projetos-detalhes h2 {
+    margin-top: 0;
+}
+
+.projetos-detalhes p {
+    margin: 10px 0;
+}
+
+/* Estilo para logos de tecnologias no portfólio */
+.tech-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-logos img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Estilo para links de projetos no portfólio */
+.projeto-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.projeto-links a {
+    background-color: #ffffff;
+    color: #12161f;
+    border-radius: 3px;
+    margin-right: 10px;
+    padding: 5px 12px;
+    text-decoration: none;
+}
+
+.projeto-links a:hover {
+    background-color: #12161f;
+    color: #ffffff;
+}
